@@ -14,7 +14,7 @@ def main_screen():
     screen.title("Encrypt and Decrypt")
 
     Label(text="Enter text for encryption and decryption", fg="black", font=("calbri", 13)).place(x=10, y=10)
-
+    text1 = Text(font="Robote 20", bg="white", relief=GROOVE, wrap=WORD, nd=0)
     screen.mainloop()
 
 
