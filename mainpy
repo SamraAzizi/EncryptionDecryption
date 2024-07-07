@@ -13,6 +13,8 @@ def main_screen():
 
     screen.title("Encrypt and Decrypt")
 
+    Label(text="Enter text for encryption and decryption", fg="black", font=("calbri", 13)).place(x=10, y=10)
+
     screen.mainloop()
 
 
