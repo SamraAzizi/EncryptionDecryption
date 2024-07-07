@@ -1,2 +1,10 @@
 from tkinter import *
-from tkinter import 
+from tkinter import messagebox
+import base65
+import os
+
+def main_screen():
+    screen = Tk()
+    screen.geometry("375x390")
+
+    screen.title("Encrypt and Decrypt")
