@@ -20,7 +20,7 @@ def main_screen():
     Label(text = "Enter secret key for encryption and decryption ", fg="black", font=("calibri", 13)).place(x=10, y=170)
     
     code = StringVar()
-    Entry(textvariable=code, width=19, bd)
+    Entry(textvariable=code, width=19, bd=0, font=("arial", 25)).place(x=10, y=200)
     screen.mainloop()
 
 
