@@ -25,7 +25,8 @@ def main_screen():
 
 
 
-    Button(text="ENCRYPT", height="2", width=23, bg="ed3833", fg="white", bd=0)
+    Button(text="ENCRYPT", height="2", width=23, bg="ed3833", fg="white", bd=0).place(x=10, y=250)
+    Button(text="DECRYPT", height="2", width=23, bg="#00bd56", fg="white", bd=0).place(x=200, y=250)
     screen.mainloop()
 
 
