@@ -18,6 +18,11 @@ def encrypt():
 
         message = text1.get(1.0, END)
         encode_message = message.encode("ascii")
+        base64_bytes = base64.b64encode(encode_message)
+        encrypt = base64_bytes.decode("ascii")
+
+
+        Label(screen, text="ENCRYPT", font ="arial", fg="white", bg="#ed3833")
 
 
 
