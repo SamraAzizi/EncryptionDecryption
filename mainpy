@@ -8,6 +8,14 @@ def decrypt():
 
 
 def encrypt():
+    password = code.get()
+
+    if password = "1234":
+        screen1 = Toplevel(screen)
+        screen1.title("encryption")
+        screen1.geometry("400x200")
+        screen1
+
 
 
 def main_screen():
