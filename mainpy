@@ -14,7 +14,10 @@ def encrypt():
         screen1 = Toplevel(screen)
         screen1.title("encryption")
         screen1.geometry("400x200")
-        screen1
+        screen1.configure(bg="#ed3833")
+
+        message = text1.get(1.0, END)
+        encode_message = message.encode("ascii")
 
 
 
