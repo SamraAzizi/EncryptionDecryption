@@ -22,7 +22,12 @@ def encrypt():
         encrypt = base64_bytes.decode("ascii")
 
 
-        Label(screen, text="ENCRYPT", font ="arial", fg="white", bg="#ed3833")
+        Label(screen, text="ENCRYPT", font ="arial", fg="white", bg="#ed3833").place(x=10, y=0)
+        text2 = Text(screen1, font="Rpbote 10", bg="white",relief=GROOVE, wrap=WORD, bd=0 )
+        text2.place(x=10, y=40, width= 380, height=150)
+
+
+        text2.insert()
 
 
 
