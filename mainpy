@@ -11,16 +11,18 @@ def decrypt():
         screen2.geometry("400x200")
         screen2.configure(bg="#00bd56")
 
-        message = text1.get(1.0, END)
-        decode_message = message.encode("ascii")
-        base64_bytes = base64.b64decode(decode_message)
-        decrypted_message = base64_bytes.decode("ascii")
+        message = text1.get(1.0, END).strip()
+        if message:
+            decode_message = message.encode("ascii")
+            base64_bytes = base64.b64decode(decode_message)
+            decrypted_message = base64_bytes.decode("ascii")
 
-        Label(screen2, text="DECRYPTED", font="Arial", fg="white", bg="#00bd56").place(x=10, y=0)
-        text2 = Text(screen2, font="Roboto 10", bg="white", relief=GROOVE, wrap=WORD, bd=0)
-        text2.place(x=10, y=40, width=380, height=150)
-
-        text2.insert(END, decrypted_message)
+            Label(screen2, text="DECRYPTED", font="Arial", fg="white", bg="#00bd56").place(x=10, y=0)
+            text2 = Text(screen2, font="Roboto 10", bg="white", relief=GROOVE, wrap=WORD, bd=0)
+            text2.place(x=10, y=40, width=380, height=150)
+            text2.insert(END, decrypted_message)
+        else:
+            messagebox.showerror("Decryption", "No message to decrypt")
 
     elif password == "":
         messagebox.showerror("Decryption", "Input Password")
@@ -37,16 +39,18 @@ def encrypt():
         screen1.geometry("400x200")
         screen1.configure(bg="#ed3833")
 
-        message = text1.get(1.0, END)
-        encode_message = message.encode("ascii")
-        base64_bytes = base64.b64encode(encode_message)
-        encrypted_message = base64_bytes.decode("ascii")
+        message = text1.get(1.0, END).strip()
+        if message:
+            encode_message = message.encode("ascii")
+            base64_bytes = base64.b64encode(encode_message)
+            encrypted_message = base64_bytes.decode("ascii")
 
-        Label(screen1, text="ENCRYPTED", font="Arial", fg="white", bg="#ed3833").place(x=10, y=0)
-        text2 = Text(screen1, font="Roboto 10", bg="white", relief=GROOVE, wrap=WORD, bd=0)
-        text2.place(x=10, y=40, width=380, height=150)
-
-        text2.insert(END, encrypted_message)
+            Label(screen1, text="ENCRYPTED", font="Arial", fg="white", bg="#ed3833").place(x=10, y=0)
+            text2 = Text(screen1, font="Roboto 10", bg="white", relief=GROOVE, wrap=WORD, bd=0)
+            text2.place(x=10, y=40, width=380, height=150)
+            text2.insert(END, encrypted_message)
+        else:
+            messagebox.showerror("Encryption", "No message to encrypt")
 
     elif password == "":
         messagebox.showerror("Encryption", "Input Password")
