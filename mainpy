@@ -10,7 +10,7 @@ def decrypt():
 def encrypt():
     password = code.get()
 
-    if password = "1234":
+    if password == "1234":
         screen1 = Toplevel(screen)
         screen1.title("encryption")
         screen1.geometry("400x200")
@@ -27,7 +27,15 @@ def encrypt():
         text2.place(x=10, y=40, width= 380, height=150)
 
 
-        text2.insert()
+        text2.insert(END, encrypt)
+
+
+
+    elif password == "":
+        messagebox.showerror("encryption", "Input Password")
+
+    elif password != "1234":
+        messagebox.showerror("encryption", "Invalid password!")
 
 
 
