@@ -27,14 +27,6 @@ This is a simple Python program that uses the Tkinter library to create a graphi
     ```sh
     pip install tkinter
     ```
-
-## Usage
-
-1. Save an image named `keys.png` in the same directory as your script to use as the application icon.
-2. Run the script:
-    ```sh
-    python script_name.py
-    ```
 3. Enter the text you want to encrypt or decrypt in the text box.
 4. Enter the password (`1234`) in the secret key field.
 5. Click "ENCRYPT" to encrypt the message or "DECRYPT" to decrypt it.
