@@ -40,9 +40,6 @@ This is a simple Python program that uses the Tkinter library to create a graphi
 5. Click "ENCRYPT" to encrypt the message or "DECRYPT" to decrypt it.
 6. Use the "RESET" button to clear the fields.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgements
 
