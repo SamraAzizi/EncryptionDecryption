@@ -14,24 +14,6 @@ This is a simple Python program that uses the Tkinter library to create a graphi
 - Python 3.x
 - Tkinter (usually included with Python installations)
 
-## Installation
-
-1. Clone the repository or download the source code.
-2. Ensure you have Python 3 installed on your system.
-3. (Optional) Create and activate a virtual environment:
-    ```sh
-    python -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
-    ```
-4. Install required packages (if any):
-    ```sh
-    pip install tkinter
-    ```
-
-## Usage
-
-1. Save an image named `keys.png` in the same directory as your script to use as the application icon.
-2. Run the script:
     ```sh
     python script_name.py
     ```
